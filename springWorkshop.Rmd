@@ -15,6 +15,8 @@ runtime: shiny_prerendered
 library(learnr)
 library(tidyverse)
 knitr::opts_chunk$set(echo = FALSE)
+
+
 ```
 
 ## Introduction
@@ -196,6 +198,8 @@ data(diamonds)
 
 # Display the data
 diamonds
+
+diamonds %>% mutate(new_col = x - y)
 ```
 
 To do so, once again, you can 
